@@ -1,0 +1,25 @@
+.btn {
+  transition: transform 0.2s;
+}
+
+@keyframes correctAnim {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes wrongAnim {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  80% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.btn.correct {
+  animation: correctAnim 0.5s ease;
+}
+
+.btn.wrong {
+  animation: wrongAnim 0.5s ease;
+}

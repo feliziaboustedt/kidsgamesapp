@@ -1,0 +1,44 @@
+.bubble {
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: floatUp 6s linear forwards;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+@keyframes floatUp {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 110%;
+  }
+}
+
+.bubble.popped {
+  animation: pop 0.3s ease forwards;
+}
+
+@keyframes pop {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.result-screen {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
