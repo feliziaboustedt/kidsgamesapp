@@ -8,7 +8,7 @@ import { GuessTheAnimalSound } from "./Components/GuessTheAnimalSound";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kidsgamesapp",
     element: <Layout />,
     children: [
       {
